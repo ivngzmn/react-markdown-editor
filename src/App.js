@@ -8,10 +8,26 @@ export default function App() {
     setMarkdown(e.target.value);
   }
   return (
-    <div className="app">
-      <textarea onChange={handleChange} value={markdown} />
-
-      <ReactMarkdown className="preview" children={markdown} />
+    <div className="container">
+      <div className="nav">
+        <span>
+          <h2>Markdown Editor</h2>
+        </span>
+        <button>
+          <a
+            rel="no-referrer"
+            href="https://github.com/ivngzmn/react-markdown-editor"
+          >
+            GitHub Repo
+          </a>
+        </button>
+      </div>
+      <div className="app">
+        <textarea onChange={handleChange} value={markdown} />
+      </div>
+      <div className="preview">
+        <ReactMarkdown children={markdown} />
+      </div>
     </div>
   );
 }

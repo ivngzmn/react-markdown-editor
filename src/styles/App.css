@@ -4,15 +4,33 @@ body {
   background: #e8eaf1;
   font-family: 'Hind', Arial, Helvetica, sans-serif;
 }
-
-.app {
+.container {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+  grid-template-rows: 0.1fr 1.9fr;
+  gap: 15px 30px;
+  grid-template-areas: "nav nav" "app preview";
+}
+.nav {
+  grid-area: nav;
+  margin: 1em;  
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}  
+.nav a {
+  text-decoration: none;
+}
+.app {
+  grid-area: app;
+  
 }
 
 textarea {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
   background: #eff1f5;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   outline: none;
@@ -23,6 +41,7 @@ textarea {
 }
 
 .preview {
+  grid-area: preview;
   padding-left: 20px;
   padding-right: 20px;
 }
