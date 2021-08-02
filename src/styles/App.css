@@ -16,11 +16,24 @@ body {
   grid-area: nav;
   margin: 1em;  
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
 }  
 .nav a {
   text-decoration: none;
+  color:rgba(0, 0, 0, 1);
+}
+.title h1 {
+  display: flex;
+  align-items: center;
+}
+
+.title h1 .icon {
+  padding-right: .5em;
+}
+button a {
+  display: flex;
+    
 }
 .app {
   grid-area: app;

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import ReactMarkdown from "react-markdown";
+import { Icon } from "@iconify/react";
+import logoMarkdown from "@iconify-icons/ion/logo-markdown";
 import "./styles/App.css";
 
 export default function App() {
@@ -10,8 +12,16 @@ export default function App() {
   return (
     <div className="container">
       <div className="nav">
-        <span>
-          <h2>Markdown Editor</h2>
+        <span className="title">
+          <h1>
+            <Icon
+              className="icon"
+              icon={logoMarkdown}
+              width="2em"
+              height="2em"
+            />
+            Markdown Editor
+          </h1>
         </span>
         <button>
           <a
