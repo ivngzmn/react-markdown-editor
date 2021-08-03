@@ -5,7 +5,7 @@ import logoMarkdown from "@iconify-icons/ion/logo-markdown";
 import "./styles/App.css";
 
 export default function App() {
-  const [markdown, setMarkdown] = useState("# Lets get started with Markdown");
+  const [markdown, setMarkdown] = useState(`# Let's get started with Markdown`);
   function handleChange(e) {
     setMarkdown(e.target.value);
   }
@@ -33,7 +33,7 @@ export default function App() {
         </button>
       </div>
       <div className="app">
-        <textarea onChange={handleChange} value={markdown} />
+        <textarea spellCheck="true" onChange={handleChange} value={markdown} />
       </div>
       <div className="preview">
         <ReactMarkdown children={markdown} />
