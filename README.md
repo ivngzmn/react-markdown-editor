@@ -17,3 +17,12 @@ At a later point I will add GitHub markup syntax and a way to download your mark
 ## Lessons Learned:
 
 Although this project was supposed to be straightforward it was actually difficult to wrap my head around CSS grid. I tried to use Tailwind CSS and just decided to go vanilla CSS. Once that was straightened out it was smooth sailing.
+
+## Examples:
+
+Take a look at these couple examples that I have in my own portfolio:
+**ToDo list:** https://github.com/ivngzmn/todo-microsoft-auth-mvc
+
+**Pomodoro App:** https://github.com/ivngzmn/react-pomodoro-app
+
+**Rock Paper Scissors Game:** https://github.com/ivngzmn/TOP-Rock-Paper-Scissors
