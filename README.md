@@ -21,6 +21,7 @@ Although this project was supposed to be straightforward it was actually difficu
 ## Examples:
 
 Take a look at these couple examples that I have in my own portfolio:
+
 **ToDo list:** https://github.com/ivngzmn/todo-microsoft-auth-mvc
 
 **Pomodoro App:** https://github.com/ivngzmn/react-pomodoro-app
